@@ -69,13 +69,7 @@ name = "eqc_updt_name"
 version = "0.1.0"
 dependencies = [
  "chrono",
- "getlibrs",
 ]
-
-[[package]]
-name = "getlibrs"
-version = "0.1.0"
-source = "git+https://github.com/dungchoet/getlibrs.git#f36ce7748ff10fea8464a5c24251a20e31842c0d"
 
 [[package]]
 name = "iana-time-zone"
