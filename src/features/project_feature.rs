@@ -13,7 +13,12 @@ use crate::helpers::{
     rename::rename_file,
 };
 
-use crate::constants::{PRJ_CODE_POS, PRJ_NAME_POS, VERSION_POS};
+use crate::constants::{
+    PRJ_CODE_POS, 
+    PRJ_NAME_POS, 
+    VERSION_POS, 
+    DEFAULT_VERSION,
+};
 
 fn apply_rename<F>(transform: F)
 where
@@ -68,7 +73,7 @@ pub fn rename_date() {
 
 pub fn new_project() {
     let new_code: String    = get_prj_code();
-    let new_version: String = get_version();
+    let new_version: String = DEFAULT_VERSION.to_string();
     let new_name: String    = get_project_name();
     let new_date: String    = current_date();
 

@@ -12,7 +12,7 @@ pub fn get_file_name() -> Vec<String> {
     let entries: fs::ReadDir = match fs::read_dir(path) {
         Ok(e) => e,
         Err(e) => {
-            eprintln!("Không thể đọc thư mục: {}", e);
+            eprintln!("Error: {}", e);
             return vec![];
         }
     };
